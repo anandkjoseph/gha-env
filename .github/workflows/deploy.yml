@@ -6,6 +6,7 @@ on:
       - dev
 jobs:
   test:
+    environment: testing
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.haebb2m.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}
